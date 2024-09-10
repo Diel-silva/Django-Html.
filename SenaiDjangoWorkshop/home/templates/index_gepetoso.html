@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botão Móvel</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />  
+</head>
+
+<body>
+    <header>
+        <h2>Bem-vindo Tela Inicial Trabalho Senai Django</h2>
+    </header>
+
+    <button id="meuBotao" onclick="moverBotao()">Fazer Cadastro</button>
+
+    <h3 id="text">Faça um Cadastro no botão Vermelho superio direito da tela para acessar todos nossos recursos.. </h3>
+
+    <h1 class="title">Caso Não conseguir efetuar o cadastro no botão Vermelho tente o botão  a baixo</h1>  
+    <a href="static/img/the rock2.gif"><button class="butonis">o link do cadastro</button> </a>
+
+    <img id="gif" src="static/img/the rock.gif" alt="GIF engraçado">
+
+    <img id="diel" src="static/img/diel.png.jpeg" alt="">
+    <nav class="saidbar">
+        <button>
+            <div>
+                <i class="material-symbols-outlined">home</i>
+                <span>Home</span>
+            </div>
+        </button>
+
+        <button>
+            <div>
+                <i class="material-symbols-outlined">tag</i>
+                <span>esplora</span>
+            </div>
+        </button>
+
+        <button>
+            <div>
+                <i class="material-symbols-outlined">email</i>
+                <span>mensagem</span>
+            </div>
+        </button>
+
+        
+
+    </nav>
+
+
+    <footer>
+        <p>&copy; 2024 DjangoApp - Desenvolvido no Senai</p>
+    </footer>
+
+    <script src="{% static 'js/scripts.js' %}"></script>
+</body>
+</html>
